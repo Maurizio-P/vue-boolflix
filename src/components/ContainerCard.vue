@@ -1,9 +1,14 @@
 <template>
   <div>
-      <header>
-        <h1>Boolflix</h1>
-        <SearchBar @textSearch="saveTextSearch" />
-      </header>
+      <div class="bg-top-bar">
+          <div class="container">
+              <div class="header">
+
+                <h1>Boolflix</h1>
+                <SearchBar @textSearch="saveTextSearch" />
+              </div>
+          </div>
+      </div>
       <main>
         <Card :film="arrayFilm" :series="arraySeries" :flags="flags" />
       </main>
@@ -76,7 +81,21 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~bootstrap/scss/bootstrap"
 
+.bg-top-bar{
+    background-color: #303030;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h1{
+        color: #e50914;
+    }
+}
+main{
+    background-color: black;
+}
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-      <input type="text" @keydown.enter="textEmit" v-model="textSearch">
+      <input type="text" @keydown.enter="textEmit" v-model="textSearch" placeholder="Cosa stai cercando?">
   </div>
 </template>
 
