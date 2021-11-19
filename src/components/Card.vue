@@ -144,6 +144,8 @@ export default {
         overflow: auto;
       .my-row {
         display: flex;
+        height: 550px;
+
 
         .my-card {
           position: relative;
@@ -152,7 +154,9 @@ export default {
           flex-shrink: 0;
           flex-grow: 0;
           margin-right: 20px;
+          transition: .5s;
           &:hover {
+            transform: scale(1.1);
             .info-text {
               opacity: 1;
             }
