@@ -145,6 +145,7 @@ export default {
       .my-row {
         display: flex;
         height: 550px;
+        padding-left: 10px;
 
 
         .my-card {
